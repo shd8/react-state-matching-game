@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import OptionsPanel from '../OptionsPanel';
 import Board from '../Board';
-import { createFiles } from '../../misc/utils';
+import { createTiles } from '../../misc/utils';
 
 import './App.css';
 
@@ -23,7 +23,7 @@ class App extends Component{
       playing: true,
       previousTileIndex: null,
       toBeCleared: null,
-      tiles: createFiles(numTiles)
+      tiles: createTiles(this.state.numTiles)
     });
   }
 
